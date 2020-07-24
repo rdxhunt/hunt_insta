@@ -16,7 +16,7 @@ class Userinfo(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
     token = models.CharField(max_length=100)
-    r_url = models.CharField(max_length=100,default="https:www.google.com")
+    r_url = models.CharField(max_length=100,default="https://www.google.com")
 
 
     def __str__(self):
